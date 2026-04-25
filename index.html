@@ -51,4 +51,200 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farazur Rahman | DevOps Engineer</title>
 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    /* Glass effect */
+    .glass {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255,255,255,0.2);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+      transition: 0.4s;
+    }
+
+    .glass:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+    }
+
+    header {
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h2 {
+      font-weight: 700;
+      color: #00f7ff;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: white;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #00f7ff;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      background: linear-gradient(90deg, #00f7ff, #00ffae);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      margin-top: 10px;
+      opacity: 0.8;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 12px 25px;
+      border-radius: 30px;
+      background: #00f7ff;
+      color: black;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #00ffae;
+      transform: scale(1.1);
+    }
+
+    /* Section */
+    section {
+      padding: 60px 10%;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #00f7ff;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+      gap: 20px;
+    }
+
+    .card {
+      padding: 20px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      opacity: 0.7;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h2>Faraz.dev</h2>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Hi, I'm Farazur Rahman</h1>
+  <p>DevOps Engineer | CI/CD | Docker | AWS | Terraform</p>
+  <a href="#projects" class="btn">View Projects</a>
+</section>
+
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="glass card">
+    <p>
+      I am a DevOps Engineer with hands-on experience in building secure and scalable systems using Docker, GitHub Actions, AWS and Terraform.
+      I specialize in CI/CD automation, containerization, and cloud infrastructure.
+    </p>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="grid">
+    
+    <div class="glass card">
+      <h3>AI Bank App DevOps</h3>
+      <p>Secure banking system with Docker, MySQL & AI integration.</p>
+    </div>
+
+    <div class="glass card">
+      <h3>GitHub Actions CI/CD</h3>
+      <p>Complete pipeline with build, test & deploy automation.</p>
+    </div>
+
+    <div class="glass card">
+      <h3>AWS ECS Deployment</h3>
+      <p>Terraform-based infrastructure deployed on AWS ECS Fargate.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">Skills</h2>
+  <div class="grid">
+    <div class="glass card">Docker</div>
+    <div class="glass card">Kubernetes</div>
+    <div class="glass card">AWS</div>
+    <div class="glass card">Terraform</div>
+    <div class="glass card">GitHub Actions</div>
+    <div class="glass card">Linux</div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Farazur Rahman | DevOps Engineer</p>
+</footer>
+
+</body>
+</html>
