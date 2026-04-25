@@ -2,7 +2,7 @@
 name: Hello workflow
 
 on:
-  Push:
+  push:
     branches: [main]
 
 # these are jobs inside the workflow
