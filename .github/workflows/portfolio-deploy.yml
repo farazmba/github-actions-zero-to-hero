@@ -3,7 +3,7 @@ name: portfolio
 on:
   push:
     branches: [main]
-  workflow_dispatch:   
+  workflow_dispatch:
 
 permissions:
   pages: write
@@ -18,17 +18,17 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: checkout code
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup the Github pages
-        uses: actions/configgit ure-pages@v4
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v4
 
-      - name: upload static files
+      - name: Upload static files
         uses: actions/upload-pages-artifact@v4
         with:
-          path: "."
+          path: ./
 
-      - name: Deploy the Github pages
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
