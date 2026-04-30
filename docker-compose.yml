@@ -3,4 +3,4 @@ services:
    web:
      image: farazag1/github-actions-app:latest
      ports:
-      - "5000:5000"
+      - "80:80"
