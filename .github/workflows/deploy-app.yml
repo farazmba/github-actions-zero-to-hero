@@ -7,12 +7,13 @@ jobs:
   deploy:
     runs-on: self-hosted
 
-    env:
-      DOCKERHUB_USER: farazag1
-
     steps:
       - name: checkout code
         uses: actions/checkout@v4
 
       - name: deploy with docker compose
-        run: docker compose up -d --build
+        run: |
+          docker compose down || true
+          docker system prune -af
+          docker compose up -d
+        working-directory: ${{ github.workspace }}
