@@ -29,13 +29,18 @@
         }
         .badge {
             display: inline-block;
-            margin: 1rem 0 2rem;
+            margin: 1rem 0 1rem;
             padding: 0.4rem 1.2rem;
             border: 1px solid #7b2ff7;
             border-radius: 999px;
             font-size: 0.9rem;
             color: #c4b5fd;
             letter-spacing: 0.05em;
+        }
+        .pipeline {
+            font-size: 0.8rem;
+            color: #86efac;
+            margin-bottom: 1.8rem;
         }
         .cards {
             display: flex;
@@ -69,6 +74,12 @@
     <div class="container">
         <h1>DevOps Zero To Hero</h1>
         <div class="badge">Josh Batch 10</div>
+
+        <!-- CI/CD Pipeline Status -->
+        <div class="pipeline">
+            ✔ Build &nbsp; ✔ Test &nbsp; ✔ Lint &nbsp; 🚀 Deployed via GitHub Actions
+        </div>
+
         <div class="cards">
             <div class="card">
                 <span>Framework</span>
